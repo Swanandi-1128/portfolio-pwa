@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="Portfolio.css" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0d0d1a">
+</head>
+<body>
+  <header class="hero">
+    <div class="text-box">
+      <h1>I'm Swanandi Vijay Kadu</h1>
+      <p>Hi, I'm Swanandi — a Computer Engineering student curious to learn about tech, open source, and real-world problem solving.</p>
+    </div>
+    <div class="img-box">
+      <img src="portfimg1.jpeg" alt="Hero Image">
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="text-box">
+      <h2>About Me</h2>
+      <p>I'm a Computer Engineering student with a strong interest in software development and open source. I love learning new technologies, building real-world projects, and continuously improving my skills.</p>
+      <p>I enjoy turning ideas into functional software using tools like C++, HTML/CSS, Git, and Generative AI. I believe in writing clean code and solving meaningful problems through technology.</p>
+    </div>
+    <div class="img-box">
+      <img src="portfimg2.jpg" alt="About Image">
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="text-box">
+      <h2>My Skills</h2>
+      <p><strong>Languages:</strong> C++, HTML, CSS</p>
+      <p><strong>Tools & Platforms:</strong> Git, GitHub, LaTeX, Visual Studio Code</p>
+      <p><strong>Concepts:</strong> Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP)</p>
+      <p><strong>Other:</strong> Generative AI Tools, Basic UI/UX Design, MS Office</p>
+    </div>
+    <div class="img-box">
+      <img src="portfimg3.jpg" alt="Skills Image">
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="text-box">
+      <h2>Get in Touch with Us</h2>
+      <p>Contact My Portfolio for inquiries or feedback about our work in Pune, India.</p>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>My Portfolio — Made with ❤ | Powered by You</p>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('✅ Service Worker Registered', reg))
+        .catch(err => console.log('❌ SW registration failed:', err));
+    }
+  </script>
+</body>
+</html>
